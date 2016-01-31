@@ -115,7 +115,7 @@ function deleteMarkers() {
 }
 
 $(document).ready(function() {
-  ws = new WebSocket("ws://nightbear.eastus.cloudapp.azure.com:8080");
+  ws = new WebSocket("ws://104.45.157.223:8080");
 
   ws.onmessage = function(event) {
     var newMarker = JSON.parse(event.data);
